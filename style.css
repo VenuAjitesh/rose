@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Sunshiney&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Sunshiney&display=swap');*/
+/* @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');  */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 body {
         margin: 0;
         padding: 0;
@@ -19,7 +20,7 @@ svg.rose {
 }
 
 body {
-  font-family: "Subshiney", cursive;
+  font-family: "Kalam", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
