@@ -10,7 +10,7 @@
 
 <body>
 
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Niconne&display=swap" rel="stylesheet">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 603.59 459.4"
     class="rose">
     <defs>
@@ -292,24 +292,76 @@
     </mask>
 
   </svg>
-  <div class="message-box">
-  <div class="message-content">
-    A Rose for my beautiful tajung <br>
-    Jaanu, I cannot afford and its weekend but, I still wanted to give you rose 🌹 in a different way <br>
-    `Are you Rose from Titanic? Because you’ve made my heart sink — in the best way possible`.
+  <div class="tab-container">
+  <div class="tab-buttons">
+    <button class="tab-btn " onclick="showDay('day1')">🌅 Day One</button>
+    <button class="tab-btn active" onclick="showDay('day2')">🌙 Day Two</button>
   </div>
-  <div class="message-content">
-    Man, things haven’t been great lately. I’ve been feeling bad about a lot of things. <br>
-    and i dont like it <br>
-    I don’t know what to do jaanu... <br>
-    But still, I want you to have a beautiful day, meri jaan 💖<br>
-    Take care
+
+  <div id="day1" class="tab-content">
+    <div class="entry-body">
+      <strong>A Rose for my beautiful tajung 💐</strong><br><br>
+      Jaanu, I cannot afford and it's weekend but, I still wanted to give you a rose 🌹 in a different way.<br>
+      <em>“Are you Rose from Titanic? Because you’ve made my heart sink — in the best way possible.”</em><br><br>
+
+      Man, things haven’t been great lately. I’ve been feeling bad about a lot of things.<br>
+      And I don’t like it.<br>
+      I don’t know what to do, jaanu...<br><br>
+      But still, I want you to have a beautiful day, meri jaan 💖<br>
+      Take care
+    </div>
+  </div>
+
+  <div id="day2" class="tab-content active">
+    <div class="entry-body">
+      Jannu 💕,<br>
+      You love your Labubu, your crush over Skull Panda,<br>
+      Octopus food and beach-blown hair.<br>
+      Buldak ramen and fights with Booboo,<br>
+      Korean nights that don’t include me too 😢.<br><br>
+
+      You say no to me but yes to your beloved,<br>
+      Dress oversized — queen of your own rom-com, that's good👌.<br>
+      I don't fit the freedom or match your colleagues,<br>
+      But damn jaanu, in your world — I'm still so intrigued 😅.<br><br>
+
+      You hate blame, you hate noise, you hate being accused,<br>
+      When you're mad, you disapear — not good at all 😒.<br>
+      But when you're happy, the world can't compare,<br>
+      You look so bright, nothing else feels there 🤗.<br><br>
+
+      So here I stand, like ramen on boil,<br>
+      Hoping one day I make your blood excite and horny.<br>
+      Not just a “no,” or a casual friend 🙅‍♂️ —<br>
+      But maybe, just maybe, you’ll understand 💕.<br><br>
+
+      I 👀 you, I 🥰 you —<br>
+      Even when you're mad, busy and distant (Stalking 🤣).<br>
+      I miss you in silence — even a minute without your voice feels like forever 🥹.<br>
+      Because loving you? That’s where I’m found.<br><br>
+      - Yours BooBoo
+    </div>
   </div>
 </div>
+
+
 
   <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
   <script src='//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
   <script src='//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/findShapeIndex.js'></script>
+  <script>
+  function showDay(dayId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-btn');
+
+    tabs.forEach(tab => tab.classList.remove('active'));
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    document.getElementById(dayId).classList.add('active');
+    event.currentTarget.classList.add('active');
+  }
+</script>
+
 </body>
 
 </html>
