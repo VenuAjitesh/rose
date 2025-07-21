@@ -27,7 +27,7 @@ body {
 }
 
 .tab-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 50px auto;
   background: repeating-linear-gradient(
     #fffdf9,
