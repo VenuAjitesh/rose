@@ -303,7 +303,9 @@
       <button class="tab-btn" onclick="showDay('27-07')">🌙 27-07</button>
       <button class="tab-btn" onclick="showDay('28-07')">🌙 28-07</button>
       <button class="tab-btn" onclick="showDay('29-07')">🌙 29-07</button>
-      <button class="tab-btn active" onclick="showDay('30-07')">🌙 30-07</button>
+      <button class="tab-btn" onclick="showDay('30-07')">🌙 30-07</button>
+      <button class="tab-btn" onclick="showDay('31-07')">🌙 31-07</button>
+      <button class="tab-btn active" onclick="showDay('01-09')">🌙 01-08</button>
     </div>
 
     <div id="day1" class="tab-content">
@@ -513,7 +515,7 @@
         ~ your fool <br>
       </div>
     </div>
-    <div id="30-07" class="tab-content active">
+    <div id="30-07" class="tab-content">
       <div class="entry-body">
         Hey stranger, <br>
         We’re 8 days into your birthday countdown — just 18 days to go.<br>
@@ -529,25 +531,58 @@
         ~ your fool <br>
       </div>
     </div>
-  </div>
+    <div id="31-07" class="tab-content">
+      <div class="entry-body">
+        Oye jaanu 💌, <br>
+        Day 9 of your birthday countdown. 17 days to go.<br>
+        I don’t always say these things out loud, but maybe I should — so here goes:<br>
+        <ul>
+          <li>You’re sweet and funny in ways most people miss.</li>
+          <li>You’ve got a calm energy that feels like want to hang around all the time.</li>
+          <li>Your laugh? Yeah, I’d play that on loop.</li>
+          <li>Even your silence has meaning.</li>
+        </ul>
+        And somehow… you still make me want to be a better version of myself.<br>
+        All of that, just true. <br>
+        And that’s why I’m still here, counting down to you. 💛<br>
+        <br>
+        ~ your foolish asshole <br>
+      </div>
+    </div>
+    <div id="01-08" class="tab-content active">
+      <div class="entry-body">
+        Oye jaaneman 🌹,<br>
+        Today’s a double reason to smile — it’s Girlfriend’s Day AND there are just 16 days to your birthday. 🥳<br>
+        So here's a little truth:<br>
+        Being your friend hasn’t just been something it’s been learning, growing, caring, messing up, fixing things, and
+        still choosing each other. <br>
+        You’re not just someone I like having around — you’re someone I want to keep beside me, even when things aren’t
+        easy.<br>
+        You’ve been patient, warm, stubborn (yes), sweet, and very hurting.<br>
+        And honestly, I wouldn’t trade that for anything.<br>
+        Happy Girlfriend’s Day to the one who matters more than she probably knows. 💛<br>
+        <br>
+        ~ Not yours foolish asshole <br>
+      </div>
+    </div>
 
 
 
-  <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
-  <script src='//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
-  <script src='//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/findShapeIndex.js'></script>
-  <script>
-    function showDay(dayId) {
-      const tabs = document.querySelectorAll('.tab-content');
-      const buttons = document.querySelectorAll('.tab-btn');
+    <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+    <script src='//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
+    <script src='//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/findShapeIndex.js'></script>
+    <script>
+      function showDay(dayId) {
+        const tabs = document.querySelectorAll('.tab-content');
+        const buttons = document.querySelectorAll('.tab-btn');
 
-      tabs.forEach(tab => tab.classList.remove('active'));
-      buttons.forEach(btn => btn.classList.remove('active'));
+        tabs.forEach(tab => tab.classList.remove('active'));
+        buttons.forEach(btn => btn.classList.remove('active'));
 
-      document.getElementById(dayId).classList.add('active');
-      event.currentTarget.classList.add('active');
-    }
-  </script>
+        document.getElementById(dayId).classList.add('active');
+        event.currentTarget.classList.add('active');
+      }
+    </script>
 
 </body>
 
