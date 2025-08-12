@@ -45,6 +45,8 @@ body {
 .tab-buttons {
   display: flex;
   justify-content: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   background: #ffe5cf;
   border-bottom: 2px dashed #e6b89c;
 }
